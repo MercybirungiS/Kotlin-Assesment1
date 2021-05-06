@@ -16,7 +16,7 @@ introduction("Hesed",7)
     details .birthday()
     println(comparison(9,8))
     players("Player1","Player2")
-
+println(Arrays.toString(names("Becy","joyce","MERCY","sANDRA","ANITA")))
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old")
