@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main() {
 introduction("Hesed",7)
     serveDrinks(5)
@@ -12,6 +14,9 @@ introduction("Hesed",7)
     details.eat(4)
     details.speak("I love Kotlin")
     details .birthday()
+    println(comparison(9,8))
+    players("Player1","Player2")
+
 }
 fun introduction(name:String,age:Int){
     println("My name is $name and I am $age years old")
@@ -60,6 +65,35 @@ class Human(var name:String,var age:Int , var weight:Float){
 
     }
 }
+
+fun comparison(num1:Int,num2:Int):Int{
+    if(num1<num2){
+
+    }
+    return  num1
+
+}
+fun players(p1:String,p2:String){
+    if(p1=="paper" && p2=="rock" || p2=="scissors"){
+        println("p2 wins")
+    }
+    else if(p1==p2){
+        println("Draw")
+    }
+    else{
+        println("p1 wins")
+    }
+
+}
+fun names(name1:String,name2:String,name3:String,name4:String,name5:String):Array<String>{
+    return arrayOf(name1,name2,name3,name4,name5)
+}
+
+
+
+
+
+
 
 
 
